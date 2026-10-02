@@ -101,7 +101,7 @@
 </div>
 <script>
 const firebaseConfig={apiKey:"AIzaSyDT5yioit0QjT5HFNvQPejP2PqndU-1xPk",authDomain:"wanasachat-ed4f0.firebaseapp.com",projectId:"wanasachat-ed4f0",storageBucket:"wanasachat-ed4f0.firebasestorage.app",messagingSenderId:"530067600143",appId:"1:530067600143:web:dfca71d6fee7237818047a"};
-firebase.initializeApp(firebaseConfig);const db=firebase.firestore();
+firebase.initializeApp(firebaseConfig);const db=firebase.firestore(); 
 db.enablePersistence({synchronizeTabs:true}).catch(()=>{});if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}
 let myUserId=localStorage.getItem('wanasa_user_id')||'',myUserName=localStorage.getItem('wanasa_user_name')||'',currentActiveChatId='',currentActiveRecipientUid='',currentActiveRecipientName='';
 let unsubscribeChatMessages=null,unsubscribePeerPresence=null,unsubscribeDirectCalls=null,unsubscribeCallSignaling=null,unsubscribeCandidates=null;
